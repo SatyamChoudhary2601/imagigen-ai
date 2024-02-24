@@ -3,7 +3,6 @@ import axios from "axios";
 import styles from "./ImageGeneration.module.css";
 // https://n3967h.csb.app/
 const URL = "https://api.openai.com/v1/images/generations";
-const API_KEY = "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";
 const ImageGeneration = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -13,7 +12,7 @@ const ImageGeneration = () => {
     const config = {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${API_KEY}`,
+        Authorization: `Bearer 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`,
         "User-Agent": "Chrome",
       },
     };
@@ -64,3 +63,7 @@ const ImageGeneration = () => {
   );
 };
 export default ImageGeneration;
+// https://api.openai.com/v1/images/generations
+// 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
+// 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
+// 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
